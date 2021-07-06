@@ -6,14 +6,14 @@
 
 import UIKit
 
-public class OverlayView: UIView {
+public class BallonView: UIView {
     
-    public let title: String
+    public let descriptionText: String
     public weak var anchorView: UIView?
     public var onTap: (() -> Void)?
 
-    public init(title: String, anchorView: UIView?) {
-        self.title = title
+    public init(descriptionText: String, anchorView: UIView?) {
+        self.descriptionText = descriptionText
         super.init(frame: .zero)
         self.anchorView = anchorView
         setupViews()
@@ -43,9 +43,9 @@ public class OverlayView: UIView {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.systemFont(ofSize: 12)
-        titleLabel.text = title
+        titleLabel.text = descriptionText
         titleLabel.textColor = .systemGray
-        titleLabel.isHidden = title.isEmpty
+        titleLabel.isHidden = descriptionText.isEmpty
         titleLabel.numberOfLines = 0
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         return titleLabel

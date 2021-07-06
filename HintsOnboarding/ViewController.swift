@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     }
 
     func showSecondOverlay() {
-        let overlayView = OverlayView(title: "You take the red pill, you stay in Wonderland and I show you how deep the rabbit hole goes.", anchorView: redbutton)
+        let overlayView = BallonView(descriptionText: "You take the red pill, you stay in Wonderland and I show you how deep the rabbit hole goes.", anchorView: redbutton)
         
         overlayView.frame = view.frame
         view.addSubview(overlayView)
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
     }
 
     func showFirstOverlay() {
-        let overlayView = OverlayView(title: "This is your last chance. After this there is no turning back. You take the blue pill, the story ends; you wake up in your bed and believe whatever you want to believe.", anchorView: blueButton)
+        let overlayView = BallonView(descriptionText: "This is your last chance. After this there is no turning back. You take the blue pill, the story ends; you wake up in your bed and believe whatever you want to believe.", anchorView: blueButton)
         overlayView.frame = view.frame
         view.addSubview(overlayView)
         overlayView.showOverlay()
