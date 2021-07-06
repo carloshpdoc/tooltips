@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HintsOnboarding"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Hints Onboarding para indicar as novidades para seu usuário"
   spec.description  = "Hints de Onboarding é uma boa forma de exibir o que há de novo para seu usuário de uma fomra simple e bonita."
   spec.homepage     = "http://carloshperc.me"
@@ -25,26 +25,19 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "Carlos Henrique" => "carloshenrique.pdoc@gmail.com" }
-  # Or just: spec.author    = "Carlos Henrique"
-  # spec.authors            = { "Carlos Henrique" => "carloshenrique.pdoc@gmail.com" }
   spec.social_media_url   = "https://twitter.com/carloshperc"
 
   spec.platform     = :ios, '12.1'
-  # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "13.1"
+  #spec.ios.deployment_target = "12.1"
   
   # Module Settings for iOS Development
   #spec.ios.deployment_target = '12.0'
 
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
   spec.source = { :git => "https://github.com/carloshpdoc/tooltips.git", :tag => "#{spec.version}" }
   spec.source_files  = "HintsOnboarding", "HintsOnboarding/**/*.{swift}"
-  spec.exclude_files = "HintsOnboarding/Exclude"
+  #spec.exclude_files = "HintsOnboarding/Exclude"
   
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -57,8 +50,7 @@ Pod::Spec.new do |spec|
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-  spec.framework      = 'SystemConfiguration'
-  spec.ios.framework  = 'UIKit'
+  spec.framework      = 'UIKIT'
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
