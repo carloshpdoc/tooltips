@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HintsOnboarding"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "Hints Onboarding para indicar as novidades para seu usuário"
   spec.description  = "Hints de Onboarding é uma boa forma de exibir o que há de novo para seu usuário de uma fomra simple e bonita."
   spec.homepage     = "http://carloshperc.me"

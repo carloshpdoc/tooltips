@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = .label
+        label.textColor = .red
         label.text = "Hello and welcome!"
         return label
     }()
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .secondaryLabel
+        label.textColor = .cyan
         label.text = "Here is different options to start your journey"
         return label
     }()
