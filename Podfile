@@ -2,10 +2,6 @@
 platform :ios, '12.0'
 workspace 'HintsOnboarding.xcworkspace'
 
-def test_pods
-  pod 'Nimble', '9.2.0'
-  pod 'Quick', '4.0.0'
-end
 
 target 'HintsOnboarding' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -15,8 +11,6 @@ target 'HintsOnboarding' do
 
   target 'HintsOnboardingTests' do
     # Pods for testing
-    inherit! :complete
-    test_pods
   end
 
 end

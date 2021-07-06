@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HintsOnboarding"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Hints Onboarding para indicar as novidades para seu usuário"
   spec.description  = "Hints de Onboarding é uma boa forma de exibir o que há de novo para seu usuário de uma fomra simple e bonita."
   spec.homepage     = "http://carloshperc.me"
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   # spec.authors            = { "Carlos Henrique" => "carloshenrique.pdoc@gmail.com" }
   spec.social_media_url   = "https://twitter.com/carloshperc"
 
-  spec.platform     = :ios, '13.1'
+  spec.platform     = :ios, '12.1'
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
