@@ -6,35 +6,35 @@
 
 import UIKit
 
-class OverlayView: UIView {
+public class OverlayView: UIView {
     
-    let title: String
-    weak var anchorView: UIView?
-    var onTap: (() -> Void)?
+    public let title: String
+    public weak var anchorView: UIView?
+    public var onTap: (() -> Void)?
 
-    init(title: String, anchorView: UIView?) {
+    public init(title: String, anchorView: UIView?) {
         self.title = title
         super.init(frame: .zero)
         self.anchorView = anchorView
         setupViews()
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("Not implemented")
     }
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
     }
 
-    func showOverlay() {
+    public func showOverlay() {
         UIView.animate(withDuration: 0.6) {
             self.alpha = 1
         }
     }
 
-    func hideOverlay(_ completion: ((Bool) -> Void)? = nil) {
+    public func hideOverlay(_ completion: ((Bool) -> Void)? = nil) {
         UIView.animate(withDuration: 0.6, animations: {
             self.alpha = 0
         }, completion: completion)
