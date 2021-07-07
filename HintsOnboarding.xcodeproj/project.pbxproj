@@ -77,11 +77,11 @@
 		A8943C1C2693D6A500B529D2 /* HintsOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				A8943C3A2695C37100B529D2 /* Resources */,
 				A8943C342693DA9A00B529D2 /* HintsOnboardingView.swift */,
 				A8943C362693DAA500B529D2 /* ViewController.swift */,
 				A8943C1D2693D6A500B529D2 /* HintsOnboarding.h */,
 				A8943C1E2693D6A500B529D2 /* Info.plist */,
-				A8943C382694F84600B529D2 /* Image.xcassets */,
 			);
 			path = HintsOnboarding;
 			sourceTree = "<group>";
@@ -93,6 +93,14 @@
 				A8943C2A2693D6A500B529D2 /* Info.plist */,
 			);
 			path = HintsOnboardingTests;
+			sourceTree = "<group>";
+		};
+		A8943C3A2695C37100B529D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8943C382694F84600B529D2 /* Image.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
