@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HintsOnboarding"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "Hints Onboarding para indicar as novidades para seu usuário"
   spec.description  = "Hints de Onboarding é uma boa forma de exibir o que há de novo para seu usuário de uma fomra simple e bonita."
   spec.homepage     = "http://carloshperc.me"
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   # Module Settings for iOS Development
   #spec.ios.deployment_target = '12.0'
 
-  spec.source = { :git => "https://github.com/carloshpdoc/tooltips.git", :tag => "#{spec.version}" }
+  spec.source = { :git => "git@github.com:carloshpdoc/Stories.git", :tag => "#{spec.version}" }
   spec.source_files  = "HintsOnboarding", "HintsOnboarding/**/*.{swift}"
   #spec.exclude_files = "HintsOnboarding/Exclude"
   
@@ -46,7 +46,7 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
 
   # spec.resource  = "icon.png"
-  spec.resources = "HintsOnboarding/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  spec.resources = "HintsOnboarding", "HintsOnboarding/Resources/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
